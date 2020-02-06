@@ -1,0 +1,11 @@
+﻿@* include the namespaces for things that appear in every page *@
+
+@using DutchTreats.Controllers
+@using DutchTreats.ViewModels
+@using DutchTreat.Data.Entities
+
+
+@* we can replace href="/app/contact/" with asp-controller="" and asp-action=""
+    it's helping with routing even if we move a file somewhere else *@
+
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
