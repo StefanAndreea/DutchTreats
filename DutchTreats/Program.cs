@@ -24,7 +24,7 @@ namespace DutchTreats
         private static void SeedDb(IWebHost host)
         {
             var scopeFactory = host.Services.GetService<IServiceScopeFactory>();
-            using (var scope = scopeFactory.CreateScope())
+            using (IServiceScope scope = scopeFactory.CreateScope())
             {
                 // when we start the web server, it's gonna atempt to seed the Db + run migrations
                 var seeder = scope.ServiceProvider.GetService<DutchSeeder>();

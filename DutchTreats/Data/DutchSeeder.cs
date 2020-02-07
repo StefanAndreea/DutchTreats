@@ -14,10 +14,10 @@ namespace DutchTreats.Data
     public class DutchSeeder
     {
         private readonly DutchContext _ctx;
-        private readonly IHostingEnvironment _hosting;
+        private readonly IWebHostEnvironment _hosting;
         private readonly UserManager<StoreUser> _userManager;
 
-        public DutchSeeder(DutchContext ctx, IHostingEnvironment hosting, UserManager<StoreUser> userManager)
+        public DutchSeeder(DutchContext ctx, IWebHostEnvironment hosting, UserManager<StoreUser> userManager)
         {
             _ctx = ctx;
             _hosting = hosting;
